@@ -1,20 +1,37 @@
 apiVersion: v1
 entries:
   elasticsearch:
-  - apiVersion: v1
-    appVersion: 8.4.1
-    created: "2022-09-26T12:06:04.463119578Z"
-    description: Official Elastic helm chart for Elasticsearch
-    digest: 0f984f5aaca6791474f5ffa22bfe0af9332ccf852a876d72b57ce28703c00f4c
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/elasticsearch.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: elasticsearch
-    sources:
-    - https://github.com/elastic/elasticsearch
-    urls:
-    - packages/elasticsearch-8.4.1-1.tgz
-    version: 8.4.1-1
-generated: "2022-09-26T12:06:04.460581647Z"
+    - apiVersion: v1
+      appVersion: 8.4.1
+      created: "2022-09-26T15:16:45.091371+03:00"
+      description: Official Elastic helm chart for Elasticsearch
+      digest: 0f984f5aaca6791474f5ffa22bfe0af9332ccf852a876d72b57ce28703c00f4c
+      home: https://github.com/elastic/helm-charts
+      icon: https://helm.elastic.co/icons/elasticsearch.png
+      maintainers:
+        - email: helm-charts@elastic.co
+          name: Elastic
+      name: elasticsearch
+      sources:
+        - https://github.com/elastic/elasticsearch
+      urls:
+        - packages/elasticsearch-8.4.1-1.tgz
+      version: 8.4.1-1
+  filebeat:
+    - apiVersion: v1
+      appVersion: 8.4.1
+      created: "2022-09-26T15:16:45.092007+03:00"
+      description: Official Elastic helm chart for Filebeat
+      digest: 6faf74627471aee1f31b76e921316cd3abc6d53760e10600491fd68202b9a4a4
+      home: https://github.com/elastic/helm-charts
+      icon: https://helm.elastic.co/icons/beats.png
+      maintainers:
+        - email: helm-charts@elastic.co
+          name: Elastic
+      name: filebeat
+      sources:
+        - https://github.com/elastic/beats
+      urls:
+        - packages/filebeat-8.4.1-1.tgz
+      version: 8.4.1-1
+generated: "2022-09-26T15:16:45.08991+03:00"
