@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "**.tgz"
+      - "packages/**.tgz"
 
 jobs:
   build:
