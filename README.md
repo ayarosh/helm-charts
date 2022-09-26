@@ -10,5 +10,5 @@ HELM charts; created or forked to get customized options
 
 `helm package example --version "0.1.0" --destination packages`
 
-3. Push your code in *main* branch (via PR)
+3. Push your code in *main* branch (via PR).
 Right after your code will be pushed into the *main* branch Github Actions workflow updates `index.yaml` file
