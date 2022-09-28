@@ -12,3 +12,17 @@ HELM charts; created or forked to get customized options
 
 3. Push your code in *main* branch (via PR).
 Right after your code will be pushed into the *main* branch Github Actions workflow updates `index.yaml` file
+
+## update helm
+`helm repo add ayarosh "https://raw.githubusercontent.com/ayarosh/helm-charts/main/"`
+`helm repo update`
+
+## private chart reference
+```
+resource "helm_release" "elasticsearch" {
+  name       = "elasticsearch"
+  repository = "https://raw.githubusercontent.com/ayarosh/helm-charts/main/"
+  chart      = "elasticsearch"
+  version    = "8.4.1-1"
+}
+```
