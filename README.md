@@ -19,6 +19,7 @@ Right after your code will be pushed into the *main* branch Github Actions workf
 `helm package kibana --version "8.4.1-2" --destination packages`
 
 2. Update index
+
 `helm repo index .`
 
 3. Push your code in *main* branch
