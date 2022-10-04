@@ -1,70 +1,54 @@
 apiVersion: v1
 entries:
   elasticsearch:
-  - apiVersion: v1
-    appVersion: 8.4.1
-    created: "2022-10-04T12:05:30.261356425Z"
-    description: Official Elastic helm chart for Elasticsearch
-    digest: 0f984f5aaca6791474f5ffa22bfe0af9332ccf852a876d72b57ce28703c00f4c
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/elasticsearch.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: elasticsearch
-    sources:
-    - https://github.com/elastic/elasticsearch
-    urls:
-    - packages/elasticsearch-8.4.1-1.tgz
-    version: 8.4.1-1
+    - apiVersion: v1
+      appVersion: 8.4.1
+      created: "2022-10-04T12:05:30.261356425Z"
+      description: Official Elastic helm chart for Elasticsearch
+      digest: 0f984f5aaca6791474f5ffa22bfe0af9332ccf852a876d72b57ce28703c00f4c
+      home: https://github.com/elastic/helm-charts
+      icon: https://helm.elastic.co/icons/elasticsearch.png
+      maintainers:
+        - email: helm-charts@elastic.co
+          name: Elastic
+      name: elasticsearch
+      sources:
+        - https://github.com/elastic/elasticsearch
+      urls:
+        - packages/elasticsearch-8.4.1-1.tgz
+      version: 8.4.1-1
   filebeat:
-  - apiVersion: v1
-    appVersion: 8.4.1
-    created: "2022-10-04T12:05:30.262354263Z"
-    description: Official Elastic helm chart for Filebeat
-    digest: 6faf74627471aee1f31b76e921316cd3abc6d53760e10600491fd68202b9a4a4
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/beats.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: filebeat
-    sources:
-    - https://github.com/elastic/beats
-    urls:
-    - packages/filebeat-8.4.1-1.tgz
-    version: 8.4.1-1
+    - apiVersion: v1
+      appVersion: 8.4.1
+      created: "2022-10-04T12:05:30.262354263Z"
+      description: Official Elastic helm chart for Filebeat
+      digest: 6faf74627471aee1f31b76e921316cd3abc6d53760e10600491fd68202b9a4a4
+      home: https://github.com/elastic/helm-charts
+      icon: https://helm.elastic.co/icons/beats.png
+      maintainers:
+        - email: helm-charts@elastic.co
+          name: Elastic
+      name: filebeat
+      sources:
+        - https://github.com/elastic/beats
+      urls:
+        - packages/filebeat-8.4.1-1.tgz
+      version: 8.4.1-1
   kibana:
-  - apiVersion: v1
-    appVersion: 8.4.1
-    created: "2022-10-04T12:05:30.263937024Z"
-    description: Official Elastic helm chart for Kibana
-    digest: 98d006e6042e51be11ed73a1221668ee36d56696248d88b1a99c520ef8e61fe5
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/kibana.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: kibana
-    sources:
-    - https://github.com/elastic/kibana
-    urls:
-    - packages/kibana-8.4.1-2.tgz
-    version: 8.4.1-2
-  - apiVersion: v1
-    appVersion: 8.4.1
-    created: "2022-10-04T12:05:30.263218496Z"
-    description: Official Elastic helm chart for Kibana
-    digest: 2e0ab745cda41b07d34cd8d8f2472cd9349ce63a326dc359cd417fa48932df2e
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/kibana.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: kibana
-    sources:
-    - https://github.com/elastic/kibana
-    urls:
-    - packages/kibana-8.4.1-1.tgz
-    version: 8.4.1-1
+    - apiVersion: v1
+      appVersion: 8.4.1
+      created: "2022-10-04T12:05:30.263218496Z"
+      description: Official Elastic helm chart for Kibana
+      digest: 2e0ab745cda41b07d34cd8d8f2472cd9349ce63a326dc359cd417fa48932df2e
+      home: https://github.com/elastic/helm-charts
+      icon: https://helm.elastic.co/icons/kibana.png
+      maintainers:
+        - email: helm-charts@elastic.co
+          name: Elastic
+      name: kibana
+      sources:
+        - https://github.com/elastic/kibana
+      urls:
+        - packages/kibana-8.4.1-1.tgz
+      version: 8.4.1-1
 generated: "2022-10-04T12:05:30.259844667Z"

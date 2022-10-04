@@ -53,11 +53,9 @@ spec:
           configMap:
             name: {{ template "kibana.fullname" . }}-helm-scripts
             defaultMode: 0755
-        {{- if .Values.createCert }}
         - name: elasticsearch-certs
           secret:
             secretName: {{ .Values.elasticsearchCertificateSecret }}
-        {{- end }}
         {{- if .Values.kibanaConfig }}
         - name: kibanaconfig
           configMap:
@@ -108,11 +106,9 @@ spec:
                 name: {{ .Values.elasticsearchCredentialSecret }}
                 key: password
         volumeMounts:
-          {{- if .Values.createCert }}
           - name: elasticsearch-certs
             mountPath: {{ template "kibana.home_dir" . }}/config/certs
             readOnly: true
-          {{- end }}
           - name: kibana-tokens
             mountPath: {{ template "kibana.home_dir" . }}/config/tokens
       {{- if .Values.extraInitContainers }}
@@ -192,11 +188,9 @@ spec:
         resources:
 {{ toYaml .Values.resources | indent 10 }}
         volumeMounts:
-          {{- if .Values.createCert }}
           - name: elasticsearch-certs
             mountPath: {{ template "kibana.home_dir" . }}/config/certs
             readOnly: true
-          {{- end }}
           - name: kibana-tokens
             mountPath: {{ template "kibana.home_dir" . }}/config/tokens
             readOnly: true
