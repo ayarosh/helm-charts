@@ -1,3 +1,4 @@
+{{- if .Values.createCert -}}
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -47,3 +48,4 @@ spec:
         - name: elasticsearch-certs
           secret:
             secretName: {{ .Values.elasticsearchCertificateSecret }}
+{{- end }}
