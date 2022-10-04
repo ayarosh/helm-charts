@@ -72,6 +72,9 @@ kibanaConfig: {}
 
 # If Pod Security Policy in use it may be required to specify security context as well as service account
 
+# Kibana will map the elasticsearch-cert volume when 'true'
+createCert: true
+
 podSecurityContext:
   fsGroup: 1000
 
